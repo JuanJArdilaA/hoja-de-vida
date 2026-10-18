@@ -1,0 +1,293 @@
+/* =========================================================
+   HOJA DE ESTILOS - JUAN JOSÉ ARDILA
+   Nota: R1, R8, R9, R10 y R11 se encuentran aplicados y 
+   comentados directamente en los archivos HTML.
+   ========================================================= */
+
+/* Reinicio básico de márgenes */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* R2: Diseño Mobile First (El CSS base está pensado para pantallas de celular) */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f6f9;
+    color: #333333;
+    padding: 0.5rem;
+}
+
+/* R6: Contenedor con ancho máximo (max-width), centrado y con unidades relativas (rem, %) */
+/* R4: Estructura principal usando grid-template-areas (En celular: 1 sola columna) */
+.contenedor-grid {
+    max-width: 75rem; /* Equivalente a 1200px aprox */
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "cabecera"
+        "menu"
+        "principal"
+        "pie";
+    gap: 1rem;
+}
+
+/* Asignación de nombres para grid-template-areas (R4) */
+.cabecera {
+    grid-area: cabecera;
+    background-color: #1e293b;
+    color: #ffffff;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+
+.cabecera h1 {
+    font-size: 1.6rem;
+    margin-bottom: 0.3rem;
+}
+
+.subtitulo {
+    font-size: 0.95rem;
+    color: #cbd5e1;
+}
+
+/* R8: Estilos del menú de navegación igual en todas las páginas */
+.menu {
+    grid-area: menu;
+    background-color: #334155;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+}
+
+.menu a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.6rem;
+    border-radius: 0.3rem;
+    font-weight: bold;
+}
+
+.menu a:hover,
+.menu a.activo {
+    background-color: #2563eb;
+}
+
+/* Área de contenido principal */
+.principal {
+    grid-area: principal;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.bloque {
+    background-color: #ffffff;
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+    border: 1px solid #e2e8f0;
+}
+
+.bloque h2 {
+    color: #1e293b;
+    border-bottom: 2px solid #2563eb;
+    padding-bottom: 0.4rem;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+/* Sección de perfil */
+.perfil-contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* R7: Las imágenes no se desbordan en el celular (max-width: 100%) */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.foto-perfil {
+    width: 8rem;
+    border-radius: 50%;
+    border: 3px solid #2563eb;
+}
+
+.img-proyecto {
+    border-radius: 0.3rem;
+    margin-bottom: 0.8rem;
+    border: 1px solid #cbd5e1;
+}
+
+.item-lista {
+    margin-bottom: 1rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.item-lista:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.item-lista h3 {
+    font-size: 1.05rem;
+    color: #0f172a;
+}
+
+/* R5: Sección en tarjetas con repeat(auto-fit, minmax(...)) */
+.contenedor-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    gap: 1rem;
+    margin-top: 0.8rem;
+}
+
+.tarjeta {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-radius: 0.4rem;
+    padding: 1rem;
+}
+
+.tarjeta h3 {
+    color: #2563eb;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.boton-link {
+    display: inline-block;
+    margin-top: 0.6rem;
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.3rem;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.boton-link:hover {
+    background-color: #1d4ed8;
+}
+
+/* Estilos sencillos para el formulario de contacto */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 0.3rem;
+    font-family: inherit;
+}
+
+.boton-enviar {
+    background-color: #1e293b;
+    color: #ffffff;
+    border: none;
+    padding: 0.7rem 1.2rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.boton-enviar:hover {
+    background-color: #2563eb;
+}
+
+/* Área: pie de página */
+.pie {
+    grid-area: pie;
+    background-color: #1e293b;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.pie a {
+    color: #93c5fd;
+    text-decoration: none;
+}
+
+.pie a:hover {
+    text-decoration: underline;
+}
+
+/* =========================================================
+   R2 y R3: MEDIA QUERIES AL FINAL (De menor a mayor)
+   Al menos 2 breakpoints visibles: 600px y 1024px
+   ========================================================= */
+
+/* R3 - Primer Breakpoint: Desde 600px (Tablets y pantallas medianas) */
+@media (min-width: 600px) {
+    body {
+        padding: 1rem;
+    }
+
+    /* R4: El diseño cambia de 1 columna a 2 columnas (menú a la izquierda) */
+    .contenedor-grid {
+        grid-template-columns: 12rem 1fr;
+        grid-template-areas:
+            "cabecera cabecera"
+            "menu     principal"
+            "pie      pie";
+    }
+
+    .perfil-contenido {
+        flex-direction: row;
+        text-align: left;
+    }
+}
+
+/* R3 - Segundo Breakpoint: Desde 1024px (Computadores de escritorio) */
+@media (min-width: 1024px) {
+    body {
+        padding: 2rem;
+    }
+
+    /* R4: El menú lateral se amplía y el espacio general crece */
+    .contenedor-grid {
+        grid-template-columns: 16rem 1fr;
+        gap: 1.5rem;
+    }
+
+    .cabecera h1 {
+        font-size: 2.2rem;
+    }
+
+    .bloque {
+        padding: 1.8rem;
+    }
+}
