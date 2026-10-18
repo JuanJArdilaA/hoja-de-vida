@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <!-- R1: Etiqueta viewport para diseño responsive en dispositivos reales -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de Vida - Juan José Ardila</title>
+    <!-- R9: Enlace al único archivo CSS con ruta relativa -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="contenedor-grid">
+        <!-- Área: cabecera -->
+        <header class="cabecera">
+            <h1>Juan José Ardila Arévalo</h1>
+            <p class="subtitulo">Desarrollador de Software en formación | Estudiante de Ingeniería de Sistemas</p>
+        </header>
+
+        <!-- Área: menu (R8 y R9: Menú igual en todas las páginas con rutas relativas) -->
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html" class="activo">Inicio</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <!-- Área: principal -->
+        <main class="principal">
+            <section class="bloque perfil">
+                <h2>Perfil Profesional</h2>
+                <div class="perfil-contenido">
+                    <!-- R7 y R9: Imagen responsive con ruta relativa y texto alternativo (alt) -->
+                    <img src="img/avatar.png" alt="Avatar de Juan José Ardila" class="foto-perfil">
+                    <p>
+                        Soy estudiante de Ingeniería de Sistemas y camper de desarrollo de software en Campuslands (Bucaramanga, Colombia). 
+                        Me apasiona la tecnología, la creación de soluciones prácticas con código y el aprendizaje continuo. 
+                        Cuento con nivel de inglés C1 conversacional y experiencia previa en ventas consultivas y gestión administrativa, 
+                        lo que me facilita trabajar en equipo y comunicarme de forma efectiva.
+                    </p>
+                </div>
+            </section>
+
+            <section class="bloque">
+                <h2>Formación Académica</h2>
+                <div class="item-lista">
+                    <h3>Entrenamiento Técnico en Desarrollo de Software</h3>
+                    <p><strong>Campuslands</strong> | En curso</p>
+                </div>
+                <div class="item-lista">
+                    <h3>Ingeniería de Sistemas</h3>
+                    <p><strong>Universidad Nacional Abierta y a Distancia (UNAD)</strong> | En curso</p>
+                </div>
+                <div class="item-lista">
+                    <h3>Bachiller Académico</h3>
+                    <p><strong>Instituto Caldas</strong> | Graduado en 2021</p>
+                </div>
+            </section>
+
+            <section class="bloque">
+                <h2>Experiencia y Trayectoria</h2>
+                <div class="item-lista">
+                    <h3>Aprendiz de Desarrollo de Software</h3>
+                    <p><strong>Pragma S.A.</strong> | Contrato de aprendizaje</p>
+                    <p>Formación patrocinada enfocada en bases sólidas de ingeniería de software y desarrollo web.</p>
+                </div>
+                <div class="item-lista">
+                    <h3>Asesor Comercial / Sales Closer</h3>
+                    <p><strong>Legendary Holding Club S.A.S.</strong> | 2023 - 2024</p>
+                    <p>Negociación, cierre de ventas en el sector turístico y atención a clientes en español e inglés.</p>
+                </div>
+                <div class="item-lista">
+                    <h3>Auxiliar Administrativo</h3>
+                    <p><strong>AZ Jewelry S.A.S.</strong></p>
+                    <p>Apoyo en organización de procesos internos, control de inventario y soporte operativo.</p>
+                </div>
+            </section>
+
+            <!-- R5: Sección en tarjetas usando Grid con repeat y minmax -->
+            <section class="bloque">
+                <h2>Mis Habilidades e Intereses</h2>
+                <div class="contenedor-tarjetas">
+                    <article class="tarjeta">
+                        <h3>HTML5 y CSS3</h3>
+                        <p>Maquetación semántica, diseño Mobile First, CSS Grid, Flexbox y sitios web responsive.</p>
+                    </article>
+                    <article class="tarjeta">
+                        <h3>Python</h3>
+                        <p>Lógica de programación, estructuras de datos, manejo de archivos JSON y creación de sistemas por consola.</p>
+                    </article>
+                    <article class="tarjeta">
+                        <h3>Git y GitHub</h3>
+                        <p>Control de versiones, trabajo colaborativo por ramas, documentación en Markdown y despliegue en GitHub Pages.</p>
+                    </article>
+                    <article class="tarjeta">
+                        <h3>Inglés C1</h3>
+                        <p>Nivel conversacional avanzado certificado para lectura de documentación técnica y comunicación global.</p>
+                    </article>
+                    <article class="tarjeta">
+                        <h3>Deporte y Disciplina</h3>
+                        <p>Entrenamiento de fuerza en gimnasio y exjugador de tenis juvenil (ITF), aplicando la disciplina del deporte al código.</p>
+                    </article>
+                    <article class="tarjeta">
+                        <h3>Trabajo en Equipo</h3>
+                        <p>Aplicación de metodologías ágiles (Scrum), comunicación asertiva y resolución de problemas bajo presión.</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <!-- Área: pie -->
+        <footer class="pie">
+            <p>Bucaramanga, Colombia | Correo: <a href="mailto:juanjardilaa@gmail.com">juanjardilaa@gmail.com</a></p>
+            <p>
+                <!-- R10: Enlaces externos con target="_blank" -->
+                <a href="https://github.com/JuanJArdilaA" target="_blank" rel="noopener noreferrer">Mi GitHub</a> |
+                <a href="https://www.linkedin.com/in/juan-jose-ardila-arevalo/" target="_blank" rel="noopener noreferrer">Mi LinkedIn</a>
+            </p>
+        </footer>
+    </div>
+
+</body>
+</html>
