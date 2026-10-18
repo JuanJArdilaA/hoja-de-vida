@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <!-- R1: Etiqueta viewport para diseño responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Juan José Ardila</title>
+    <!-- R9: Ruta relativa al CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="contenedor-grid">
+        <header class="cabecera">
+            <h1>Juan José Ardila Arévalo</h1>
+            <p class="subtitulo">Contacto y Redes Profesionales</p>
+        </header>
+
+        <!-- R8 y R9: Mismo menú de navegación con rutas relativas -->
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="contacto.html" class="activo">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <main class="principal">
+            <section class="bloque">
+                <h2>¡Hablemos!</h2>
+                <p>Si deseas ponerte en contacto conmigo para proyectos académicos, prácticas de desarrollo o colaborar en GitHub, puedes encontrarme en los siguientes canales:</p>
+
+                <!-- R5: Tarjetas para los canales de contacto -->
+                <div class="contenedor-tarjetas">
+                    <article class="tarjeta">
+                        <h3>Correo Electrónico</h3>
+                        <p>Para comunicaciones formales o académicas:</p>
+                        <p><a href="mailto:juanjardilaa@gmail.com" class="boton-link">juanjardilaa@gmail.com</a></p>
+                    </article>
+
+                    <article class="tarjeta">
+                        <h3>GitHub</h3>
+                        <p>Aquí subo mis repositorios de clase en Campuslands y mis prácticas de código:</p>
+                        <!-- R10: Enlace externo con target="_blank" -->
+                        <p><a href="https://github.com/JuanJArdilaA" target="_blank" rel="noopener noreferrer" class="boton-link">github.com/JuanJArdilaA</a></p>
+                    </article>
+
+                    <article class="tarjeta">
+                        <h3>LinkedIn</h3>
+                        <p>Conecta conmigo para ver mi recorrido profesional y formación:</p>
+                        <!-- R10: Enlace externo con target="_blank" -->
+                        <p><a href="https://www.linkedin.com/in/juan-jose-ardila-arevalo/" target="_blank" rel="noopener noreferrer" class="boton-link">Ver perfil en LinkedIn</a></p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="bloque">
+                <h2>Envíame un mensaje rápido</h2>
+                <form action="#" method="get" class="formulario">
+                    <div class="campo">
+                        <label for="nombre">Tu nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+                    </div>
+                    <div class="campo">
+                        <label for="correo">Tu correo:</label>
+                        <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+                    </div>
+                    <div class="campo">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                    </div>
+                    <button type="submit" class="boton-enviar">Enviar mensaje</button>
+                </form>
+            </section>
+        </main>
+
+        <footer class="pie">
+            <p>Bucaramanga, Colombia | Correo: <a href="mailto:juanjardilaa@gmail.com">juanjardilaa@gmail.com</a></p>
+            <p>
+                <!-- R10: Enlaces externos con target="_blank" -->
+                <a href="https://github.com/JuanJArdilaA" target="_blank" rel="noopener noreferrer">Mi GitHub</a> |
+                <a href="https://www.linkedin.com/in/juan-jose-ardila-arevalo/" target="_blank" rel="noopener noreferrer">Mi LinkedIn</a>
+            </p>
+        </footer>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <!-- R1: Etiqueta viewport para diseño responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos - Juan José Ardila</title>
+    <!-- R9: Ruta relativa al CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="contenedor-grid">
+        <header class="cabecera">
+            <h1>Juan José Ardila Arévalo</h1>
+            <p class="subtitulo">Mis Proyectos en Campuslands</p>
+        </header>
+
+        <!-- R8 y R9: Mismo menú de navegación con rutas relativas -->
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="proyectos.html" class="activo">Proyectos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <main class="principal">
+            <section class="bloque">
+                <h2>Trabajos y Proyectos Realizados</h2>
+                <p>Estos son algunos de los proyectos que he construido durante mis primeras semanas de formación en desarrollo de software:</p>
+
+                <!-- R5: Tarjetas automáticas con repeat(auto-fit, minmax(...)) -->
+                <div class="contenedor-tarjetas">
+                    <article class="tarjeta">
+                        <!-- R7 y R9: Imagen con max-width: 100%, ruta relativa y alt -->
+                        <img src="img/proyecto1.png" alt="Captura del proyecto ForceTech en Python" class="img-proyecto">
+                        <h3>ForceTech - Gestión de Gimnasio</h3>
+                        <p>Sistema desarrollado en Python aplicando metodología Scrum. Permite gestionar usuarios, entrenamientos y persistencia de datos en archivos JSON.</p>
+                        <!-- R10: Enlace externo en nueva pestaña -->
+                        <p><a href="https://github.com/JuanJArdilaA" target="_blank" rel="noopener noreferrer" class="boton-link">Ver en GitHub</a></p>
+                    </article>
+
+                    <article class="tarjeta">
+                        <img src="img/proyecto2.png" alt="Captura del sitio web Barbería Bigote Elegante" class="img-proyecto">
+                        <h3>Barbería Bigote Elegante</h3>
+                        <p>Página web responsive maquetada con HTML5 y CSS3, cuidando la estructura visual, tipografías y adaptación a pantallas móviles.</p>
+                        <p><a href="https://github.com/JuanJArdilaA" target="_blank" rel="noopener noreferrer" class="boton-link">Ver en GitHub</a></p>
+                    </article>
+
+                    <article class="tarjeta">
+                        <h3>Sistema Operativo Campuslands (Hackathon)</h3>
+                        <p>MVP construido en una maratón de programación de 5 horas en equipo. Gestión de operaciones académicas hecho en Python con control de versiones en Git.</p>
+                        <p><a href="https://github.com/JuanJArdilaA" target="_blank" rel="noopener noreferrer" class="boton-link">Ver en GitHub</a></p>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer class="pie">
+            <p>Bucaramanga, Colombia | Correo: <a href="mailto:juanjardilaa@gmail.com">juanjardilaa@gmail.com</a></p>
+            <p>
+                <!-- R10: Enlaces externos con target="_blank" -->
+                <a href="https://github.com/JuanJArdilaA" target="_blank" rel="noopener noreferrer">Mi GitHub</a> |
+                <a href="https://www.linkedin.com/in/juan-jose-ardila-arevalo/" target="_blank" rel="noopener noreferrer">Mi LinkedIn</a>
+            </p>
+        </footer>
+    </div>
+
+</body>
+</html>
